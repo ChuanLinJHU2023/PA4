@@ -27,7 +27,8 @@ class FateLine:
             return None
         if symbol_y == symbol and symbol_x == symbol:
             # Create a new Fate Line that chooses y at this point
-            history = self.history.append("y")
+            history = self.history.copy()
+            history.append("y")
             index_x = self.index_x
             index_y = self.index_y_increment()
             x = self.x
@@ -46,27 +47,35 @@ class FateLine:
 
 
 class OnlineSignalProcessor:
-    def __init__(self,x,y):
+    def __init__(self, x, y):
         newFateLine = FateLine(x, y)
-        self.FateLines = [].append(newFateLine)
+        self.FateLines = []
+        self.FateLines.append(newFateLine)
 
-    def receive_symbol(self,symbol):
+    def receive_symbol(self, symbol):
+        newFateLines = []
         for fateLine in self.FateLines:
-            newFateLine=fateLine.make_choice_when_receiving_symbol(symbol)
+            newFateLine = fateLine.make_choice_when_receiving_symbol(symbol)
             if newFateLine:
-                self.FateLines.append(newFateLine)
+                newFateLines.append(newFateLine)
+        self.FateLines.extend(newFateLines)
 
     def report(self):
-        worktime=len(self.FateLines[0])
-        numerOfFateLines=len(self.FateLines)
+        worktime = len(self.FateLines[0].history)
+        numerOfFateLines = len(self.FateLines)
         print("Here is a report at time t={}".format(worktime))
-        i=0
-        while i<numerOfFateLines:
-            fateLine=self.FateLines[i]
-            print("Fate Line {:3}:".format(i+1), fateLine.history)
+        i = 0
+        while i < numerOfFateLines:
+            fateLine = self.FateLines[i]
+            print("Fate Line {:3}:".format(i + 1), fateLine.history)
+            i += 1
+        print()
+        print()
 
-def signalProcessing(signal,x,y):
-    onlineSignalProcessor=OnlineSignalProcessor(x, y)
+
+def SignalProcess(signal, x, y):
+    onlineSignalProcessor = OnlineSignalProcessor(x, y)
     for symbol in signal:
-        OnlineSignalProcessor.receive_symbol(symbol)
-    OnlineSignalProcessor.report()
+        onlineSignalProcessor.receive_symbol(symbol)
+        onlineSignalProcessor.report()
+    return onlineSignalProcessor

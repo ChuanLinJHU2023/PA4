@@ -1,2 +1,15 @@
-print("{:10}".format(2))
-print("{:10}".format(1112))
+# a=list()
+# a.append("x")
+#
+# class hello:
+#     def __init__(self,array=[]):
+#         self.array=array
+#         self.array.append("x")
+#
+# hello()
+
+class hello:
+    def __init__(self,array=[]):
+        assert array is not None
+
+hello()
