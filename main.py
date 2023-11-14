@@ -5,10 +5,11 @@ class FateLine:
         self.index_x = index_x
         self.index_y = index_y
         self.history = history
-        self.is_alive = True
+        self.not_dead_yet = True
+        self.birth_date = len(history)
 
     def make_choice_when_receiving_symbol(self, symbol):
-        if not self.is_alive:
+        if not self.not_dead_yet:
             self.history.append("d")
             return None
         symbol_x = self.x[self.index_x]
@@ -22,7 +23,7 @@ class FateLine:
             self.index_y = self.index_y_increment()
             return None
         if symbol_x != symbol and symbol_y != symbol:
-            self.is_alive = False
+            self.not_dead_yet = False
             self.history.append("d")
             return None
         if symbol_y == symbol and symbol_x == symbol:
@@ -67,7 +68,7 @@ class OnlineSignalProcessor:
         i = 0
         while i < numerOfFateLines:
             fateLine = self.FateLines[i]
-            print("Fate Line {:3}:".format(i + 1), fateLine.history)
+            print("Fate Line{:3} (birth date:{:3}):".format(i + 1, fateLine.birth_date), fateLine.history)
             i += 1
         print()
         print()

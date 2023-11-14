@@ -1,0 +1,170 @@
+Here is a report at time t=1
+Fate Line  1 (birth date:  0): ['x']
+
+
+Here is a report at time t=2
+Fate Line  1 (birth date:  0): ['x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y']
+
+
+Here is a report at time t=3
+Fate Line  1 (birth date:  0): ['x', 'x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y']
+
+
+Here is a report at time t=4
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y']
+
+
+Here is a report at time t=5
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y']
+
+
+Here is a report at time t=6
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y']
+
+
+Here is a report at time t=7
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y']
+
+
+Here is a report at time t=8
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y']
+
+
+Here is a report at time t=9
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y']
+
+
+Here is a report at time t=10
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x']
+Fate Line  8 (birth date: 10): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'y']
+Fate Line  9 (birth date: 10): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'y']
+
+
+Here is a report at time t=11
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x']
+Fate Line  8 (birth date: 10): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'y', 'd']
+Fate Line  9 (birth date: 10): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'y', 'd']
+Fate Line 10 (birth date: 11): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y']
+Fate Line 11 (birth date: 11): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y']
+Fate Line 12 (birth date: 11): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y']
+
+
+Here is a report at time t=12
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd', 'd', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x', 'y']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x', 'y']
+Fate Line  8 (birth date: 10): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'y', 'd', 'd']
+Fate Line  9 (birth date: 10): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'y', 'd', 'd']
+Fate Line 10 (birth date: 11): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y', 'y']
+Fate Line 11 (birth date: 11): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y', 'y']
+Fate Line 12 (birth date: 11): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y', 'y']
+
+
+Here is a report at time t=13
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'x']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x']
+Fate Line  8 (birth date: 10): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'y', 'd', 'd', 'd']
+Fate Line  9 (birth date: 10): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'y', 'd', 'd', 'd']
+Fate Line 10 (birth date: 11): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x']
+Fate Line 11 (birth date: 11): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x']
+Fate Line 12 (birth date: 11): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y', 'y', 'x']
+Fate Line 13 (birth date: 13): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'y']
+Fate Line 14 (birth date: 13): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'y']
+Fate Line 15 (birth date: 13): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'y']
+
+
+Here is a report at time t=14
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'x', 'd']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'x', 'd']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'x', 'd']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'x']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'x']
+Fate Line  8 (birth date: 10): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'y', 'd', 'd', 'd', 'd']
+Fate Line  9 (birth date: 10): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'y', 'd', 'd', 'd', 'd']
+Fate Line 10 (birth date: 11): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'x']
+Fate Line 11 (birth date: 11): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'x']
+Fate Line 12 (birth date: 11): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y', 'y', 'x', 'x']
+Fate Line 13 (birth date: 13): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'y', 'y']
+Fate Line 14 (birth date: 13): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'y', 'y']
+Fate Line 15 (birth date: 13): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'y', 'y']
+Fate Line 16 (birth date: 14): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'y']
+Fate Line 17 (birth date: 14): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'y']
+Fate Line 18 (birth date: 14): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'y']
+Fate Line 19 (birth date: 14): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'y']
+Fate Line 20 (birth date: 14): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y', 'y', 'x', 'y']
+
+
+Here is a report at time t=15
+Fate Line  1 (birth date:  0): ['x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  2 (birth date:  2): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd']
+Fate Line  3 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd', 'd']
+Fate Line  4 (birth date:  5): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'x', 'd', 'd']
+Fate Line  5 (birth date:  7): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'x', 'd', 'd']
+Fate Line  6 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  7 (birth date:  8): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  8 (birth date: 10): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd']
+Fate Line  9 (birth date: 10): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd']
+Fate Line 10 (birth date: 11): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x']
+Fate Line 11 (birth date: 11): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x']
+Fate Line 12 (birth date: 11): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y', 'y', 'x', 'x', 'x']
+Fate Line 13 (birth date: 13): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x']
+Fate Line 14 (birth date: 13): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x']
+Fate Line 15 (birth date: 13): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'y', 'y', 'x']
+Fate Line 16 (birth date: 14): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y']
+Fate Line 17 (birth date: 14): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'y']
+Fate Line 18 (birth date: 14): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y']
+Fate Line 19 (birth date: 14): ['x', 'x', 'x', 'y', 'y', 'y', 'x', 'x', 'x', 'y', 'y', 'y', 'x', 'y', 'y']
+Fate Line 20 (birth date: 14): ['x', 'x', 'x', 'y', 'x', 'x', 'y', 'y', 'x', 'y', 'y', 'y', 'x', 'y', 'y']
+
+
+
+Process finished with exit code 0
