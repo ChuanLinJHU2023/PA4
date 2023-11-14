@@ -3,6 +3,6 @@ x="101"
 y="010"
 s="100110011001"
 onlineSignalProcessor=SignalProcess(s,x,y)
-answer = "xxyxyyyyxyxx"
+onlineSignalProcessor.translateSolutionWithId(42)
 
-# Fate Line 17 (birth date: 10): ['x', 'x', 'y', 'x', 'y', 'y', 'y', 'y', 'x', 'y', 'x', 'x']
+# Fate Line 42 (birth date: 10): ['x', 'x', 'y', 'x', 'y', 'y', 'y', 'y', 'x', 'y', 'x', 'x']
