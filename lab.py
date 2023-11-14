@@ -8,8 +8,10 @@
 #
 # hello()
 
-class hello:
-    def __init__(self,array=[]):
-        assert array is not None
+# class hello:
+#     def __init__(self,array=[]):
+#         assert array is not None
+#
+# hello()
 
-hello()
+print([1,2,3,4,4].count(4))

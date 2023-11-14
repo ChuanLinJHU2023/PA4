@@ -46,6 +46,13 @@ class FateLine:
     def index_y_increment(self):
         return (self.index_y + 1) % len(self.y)
 
+    def check(self):
+    # In Paragraph 5, to get a correct solution, we need at least a full match of x and a full match of y.
+        count_of_symbols_from_x = self.history.count("x")
+        count_of_symbols_from_y = self.history.count("y")
+        if count_of_symbols_from_x>=3 and count_of_symbols_from_y>=3:
+            return True
+        return False
 
 class OnlineSignalProcessor:
     def __init__(self, x, y):
@@ -72,6 +79,7 @@ class OnlineSignalProcessor:
             i += 1
         print()
         print()
+
 
 
 def SignalProcess(signal, x, y):
