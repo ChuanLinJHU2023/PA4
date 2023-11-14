@@ -1,0 +1,62 @@
+/usr/local/bin/python3 /Users/linchuan/JHU算法导论/PA4/TestCase_S1.py
+Here is a report at time t=1
+Fate Line  1 (birth date:  0): ['x']
+
+
+Here is a report at time t=2
+Fate Line  1 (birth date:  0): ['x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y']
+
+
+Here is a report at time t=3
+Fate Line  1 (birth date:  0): ['x', 'x', 'y']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y']
+
+
+Here is a report at time t=4
+Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x', 'y']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y', 'x']
+Fate Line  4 (birth date:  4): ['x', 'y', 'y', 'y']
+
+
+Here is a report at time t=5
+Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x', 'y', 'x']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y', 'x', 'x']
+Fate Line  4 (birth date:  4): ['x', 'y', 'y', 'y', 'd']
+
+
+Here is a report at time t=6
+Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y', 'x', 'y']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x', 'y', 'x', 'y']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y', 'x', 'x', 'y']
+Fate Line  4 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd']
+
+
+Here is a report at time t=7
+Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y', 'x', 'y', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x', 'y', 'x', 'y', 'x']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y', 'x', 'x', 'y', 'x']
+Fate Line  4 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd']
+
+
+Here is a report at time t=8
+Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y', 'x', 'y', 'x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x', 'y', 'x', 'y', 'x', 'x']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x']
+Fate Line  4 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd']
+Fate Line  5 (birth date:  8): ['x', 'x', 'y', 'y', 'x', 'y', 'x', 'y']
+Fate Line  6 (birth date:  8): ['x', 'y', 'x', 'y', 'x', 'y', 'x', 'y']
+Fate Line  7 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y']
+
+
+Here is a report at time t=9
+Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'x']
+Fate Line  2 (birth date:  2): ['x', 'y', 'x', 'y', 'x', 'y', 'x', 'x', 'x']
+Fate Line  3 (birth date:  3): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x']
+Fate Line  4 (birth date:  4): ['x', 'y', 'y', 'y', 'd', 'd', 'd', 'd', 'd']
+Fate Line  5 (birth date:  8): ['x', 'x', 'y', 'y', 'x', 'y', 'x', 'y', 'd']
+Fate Line  6 (birth date:  8): ['x', 'y', 'x', 'y', 'x', 'y', 'x', 'y', 'd']
+Fate Line  7 (birth date:  8): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'y', 'd']
