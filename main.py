@@ -1,3 +1,4 @@
+
 class FateLine:
     def __init__(self, x, y, index_x=0, index_y=0, history=[]):
         self.id = 0
@@ -23,18 +24,19 @@ class FateLine:
             y = self.y
             newFateLine = FateLine(x, y, index_x, index_y, history)
             returnedFateLines.append(newFateLine)
-
         symbol_x = self.x[self.index_x]
         symbol_y = self.y[self.index_y]
-        if symbol_x == symbol and symbol_y != symbol:
-            self.history.append("x")
-            self.index_x = self.index_x_increment()
-        if symbol_x != symbol and symbol_y == symbol:
-            self.history.append("y")
-            self.index_y = self.index_y_increment()
-        if symbol_x != symbol and symbol_y != symbol:
-            self.history.append("d")
-        if symbol_y == symbol and symbol_x == symbol:
+        if symbol_x == symbol:
+            # Create a new Fate Line that chooses y at this point
+            history = self.history.copy()
+            history.append("x")
+            index_x = self.index_x_increment()
+            index_y = self.index_y
+            x = self.x
+            y = self.y
+            newFateLine = FateLine(x, y, index_x, index_y, history)
+            returnedFateLines.append(newFateLine)
+        if symbol_y == symbol:
             # Create a new Fate Line that chooses y at this point
             history = self.history.copy()
             history.append("y")
@@ -43,10 +45,9 @@ class FateLine:
             x = self.x
             y = self.y
             newFateLine = FateLine(x, y, index_x, index_y, history)
-            # Revise the original Fate Line that chooses x at this point
-            self.history.append("x")
-            self.index_x = self.index_x_increment()
             returnedFateLines.append(newFateLine)
+
+        self.history.append("d")
         return returnedFateLines
 
     def index_x_increment(self):
@@ -89,8 +90,8 @@ class OnlineSignalProcessor:
         while i < numberOfFateLines:
             fateLine = self.FateLines[i]
             fateLine.id = i + 1
-            print("Fate Line{:3} (birth date:{:3}):".format(fateLine.id, fateLine.birth_date), fateLine.history)
             i += 1
+            print("Fate Line{:3} (birth date:{:3}):".format(fateLine.id, fateLine.birth_date), fateLine.history)
         print()
         print()
 
@@ -126,8 +127,8 @@ class OnlineSignalProcessor:
                         positions_of_noise.append(i + 1)
                 print("For FateLine{:3}, we have".format(id))
                 print(positions_of_x, "are repetitions of x")
-                print(positions_of_y, "are repetitions of x")
-                print(positions_of_noise, "are repetitions of x")
+                print(positions_of_y, "are repetitions of y")
+                print(positions_of_noise, "are noise")
 
     def getIdOfSolution(self, positions_of_x_in_solution, positions_of_y_in_solution, positions_of_noises_in_solution):
         for fateLine in self.FateLines:
