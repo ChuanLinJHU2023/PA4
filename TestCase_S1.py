@@ -1,10 +1,10 @@
-from main import *
+from main2 import *
 x="101"
 y="0"
 s="100010101"
 onlineSignalProcessor=SignalProcess(s,x,y)
-onlineSignalProcessor.translateSolutionWithId(78)
-fateLine=onlineSignalProcessor.getFateLineById(78)
+onlineSignalProcessor.translateSolutionWithId(69)
+fateLine=onlineSignalProcessor.getFateLineById(69)
 print(fateLine.check())
 
 # Fate Line  1 (birth date:  0): ['x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'x']
