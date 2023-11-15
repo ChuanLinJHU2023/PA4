@@ -63,8 +63,10 @@ class FateLine:
         # In Paragraph 5, to get a correct solution, we need at least a full match of x and a full match of y.
         count_of_symbols_from_x = self.history.count("x")
         count_of_symbols_from_y = self.history.count("y")
-        if count_of_symbols_from_x >= 3 and count_of_symbols_from_y >= 3:
-            if count_of_symbols_from_x % 3 == 0 and count_of_symbols_from_y % 3 == 0:
+        len_x=len(self.x)
+        len_y=len(self.y)
+        if count_of_symbols_from_x >= len_x and count_of_symbols_from_y >= len_y:
+            if count_of_symbols_from_x % len_x == 0 and count_of_symbols_from_y % len_y == 0:
                 return True
         return False
 
@@ -73,7 +75,9 @@ class OnlineSignalProcessor:
     number_of_fate_line_evolvement=0
     number_of_fate_line_derivation=0
     isTestRun=False
-    TestRunOutputFilename=None
+    TestRunOutputFilename = None
+    TestRunDatasetOutputFilename = None
+    TestRunDatasetInputFilename = None
     def __init__(self, x, y):
         newFateLine = FateLine(x, y)
         self.FateLines = []
@@ -113,6 +117,15 @@ class OnlineSignalProcessor:
                 print("Fate Line{:3} (birth date:{:3}):".format(fateLine.id, fateLine.birth_date), fateLine.history)
         print()
         print()
+        if OnlineSignalProcessor.isTestRun:
+            with open(OnlineSignalProcessor.TestRunDatasetOutputFilename, "a+") as file:
+                fateLine=self.FateLines[0]
+                n=len(fateLine.history)
+                file.write("There is the output dataset of a test run with n={}\n".format(n))
+                for fateLine in self.FateLines:
+                    if fateLine.id not in self.failed_solutions:
+                        file.write("Fate Line{:3} (birth date:{:3}): {}\n".format(fateLine.id, fateLine.birth_date, fateLine.history))
+                file.write("\n"*10)
 
     def getFateLineById(self, id):
         for fateLine in self.FateLines:
@@ -163,8 +176,9 @@ class OnlineSignalProcessor:
         a1=OnlineSignalProcessor.number_of_fate_line_derivation
         a2=OnlineSignalProcessor.number_of_fate_line_evolvement
         a3=2**a0
+        a4=3**a0
         with open(OnlineSignalProcessor.TestRunOutputFilename, "a+") as file:
-            file.write("{} {} {} {}\n".format(a0, a1, a2, a3))
+            file.write("{} {} {} {} {}\n".format(a0, a1, a2, a3, a4))
 
 
 def SignalProcess(signal, x, y):
