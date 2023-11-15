@@ -1,29 +1,24 @@
 
 class FateLine:
-    def __init__(self, x, y, index_x=0, index_y=0, history=[]):
+    def __init__(self, x, y, index_x=0, index_y=0, history=None):
         self.id = 0
         self.x = x
         self.y = y
         self.index_x = index_x
         self.index_y = index_y
         self.history = history
-        self.birth_date = len(history)
+        if history is None:
+            history=[]
+        self.history=history
+        self.birth_date = len(self.history)
 
     def make_choice_when_receiving_symbol(self, symbol):
         if "d" in self.history:
             self.history.append("d")
+            if OnlineSignalProcessor.isTestRun:
+                OnlineSignalProcessor.number_of_fate_line_evolvement+=1
             return None
-
         returnedFateLines = []
-        if "x" not in self.history and "y" not in self.history and "d" not in self.history:
-            history = self.history.copy()
-            history.append("b")
-            index_x = self.index_x
-            index_y = self.index_y
-            x = self.x
-            y = self.y
-            newFateLine = FateLine(x, y, index_x, index_y, history)
-            returnedFateLines.append(newFateLine)
         symbol_x = self.x[self.index_x]
         symbol_y = self.y[self.index_y]
         if symbol_x == symbol:
@@ -36,6 +31,8 @@ class FateLine:
             y = self.y
             newFateLine = FateLine(x, y, index_x, index_y, history)
             returnedFateLines.append(newFateLine)
+            if OnlineSignalProcessor.isTestRun:
+                OnlineSignalProcessor.number_of_fate_line_derivation+=1
         if symbol_y == symbol:
             # Create a new Fate Line that chooses y at this point
             history = self.history.copy()
@@ -46,8 +43,14 @@ class FateLine:
             y = self.y
             newFateLine = FateLine(x, y, index_x, index_y, history)
             returnedFateLines.append(newFateLine)
-
-        self.history.append("d")
+            if OnlineSignalProcessor.isTestRun:
+                OnlineSignalProcessor.number_of_fate_line_derivation+=1
+        if "x" not in self.history and "y" not in self.history:
+            self.history.append("b")
+        else:
+            self.history.append("d")
+        if OnlineSignalProcessor.isTestRun:
+            OnlineSignalProcessor.number_of_fate_line_evolvement += 1
         return returnedFateLines
 
     def index_x_increment(self):
@@ -67,11 +70,16 @@ class FateLine:
 
 
 class OnlineSignalProcessor:
+    number_of_fate_line_evolvement=0
+    number_of_fate_line_derivation=0
+    isTestRun=False
+    TestRunOutputFilename=None
     def __init__(self, x, y):
         newFateLine = FateLine(x, y)
         self.FateLines = []
         self.FateLines.append(newFateLine)
         self.failed_solutions=[]
+
 
     def receive_symbol(self, symbol):
         newFateLines = []
@@ -149,6 +157,15 @@ class OnlineSignalProcessor:
                         return fateLine.id
         return None
 
+    def TestRunSummary(self):
+        fateLine=self.FateLines[0]
+        a0=len(fateLine.history)
+        a1=OnlineSignalProcessor.number_of_fate_line_derivation
+        a2=OnlineSignalProcessor.number_of_fate_line_evolvement
+        a3=2**a0
+        with open(OnlineSignalProcessor.TestRunOutputFilename, "a+") as file:
+            file.write("{} {} {} {}\n".format(a0, a1, a2, a3))
+
 
 def SignalProcess(signal, x, y):
     onlineSignalProcessor = OnlineSignalProcessor(x, y)
@@ -156,4 +173,6 @@ def SignalProcess(signal, x, y):
         onlineSignalProcessor.receive_symbol(symbol)
         onlineSignalProcessor.report()
     onlineSignalProcessor.getSolutions()
+    if OnlineSignalProcessor.isTestRun:
+        onlineSignalProcessor.TestRunSummary()
     return onlineSignalProcessor
