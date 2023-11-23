@@ -1,0 +1,46 @@
+Natural Language Description
+	First, we need to introduce the concept of the fate line. 
+	When we need to make choices over time, at any point in time, a fate line of this time point is a choice sequence whose length is the same as the length of time we experience. Over time, we can develop existing fate lines or derive new ones, which makes us able to observe all the possible choice sequences for the time that we have experience
+	Here is an example. Our life is a continuous process of making choices over time. Each life is a sequence of choices, with each element indicating our choices at each stage of life. For example, before college entrance, we choose our college major. Before we get married, we choose our wives. Moreover, at a time point, we may be faced with multiple different choices. For example, math and physics are equally promising choices before college and I chose mathematics as my major. In my current fate line, I developed my fate line by choosing math. However, I want to know what would happen if I chose physics. So I need to observe an additional line of fate. In this additional line of fate, my life trajectory before college (my choices before college entrance) remained the same, but I chose physics. If we want to look at all possible trajectories of our lives, we need to look at all possible lines of fate.  
+	
+	Now let's get back to the topic of signal processing.
+	Over time, we continue to receive a signal, and we need to make choices accordingly. Let's say at some point in time we receive a certain symbol. For this symbol, we have the following three possible choices: 1. This symbol belongs to x's repetition 2. This symbol belongs to y's repetition 3. This symbol belongs to noise. For ease of expression, we call x, y, and noise the three symbol providers. We call these three choices 1. We choose to have x provide the symbol 2. We choose to have y provide the symbol 3. We chose to have noise provide this symbol. 
+	Of course, at any point in time, our choices need to meet certain limitations, such as a. Provider x provides symbols in a loop according to the string x. If symbol provider x provides symbol x[i] last time, this time it can only provide the symbol x[(i+1)%len(x)]. Same thing for y. b. At a certain point in time, if we select symbol provider x to provide the symbol, the symbol provided by x must match the symbol received. c. For noise, we can divide it into prefix noise and suffix noise. At any point in time, we can choose the noise to provide the symbol. But whether this noise symbol is a symbol of prefix noise or a symbol of suffix noise is determined by our historical choice sequence. 
+	In addition, when we no longer receive symbols, any of our solutions (i.e., final assignments of symbols s to symbols in x,y, noise) can also be regarded as a choice sequence. Taking our S1 test case as an example, our solution is: {[1,2,3],[7,8,9]} are repetitions of x and {[4,5,6],[10,11,12]} are repetitions of y. Our solution can be expressed in the choice sequence, i.e. solution="xxxyyyxxxyyy". I call the representation using a choice sequence the choice representation of the solution. The original representation is called the direct representation of the solution.
+	Since our signal processing is also a process of continuous choice over time, we can find all solutions by maintaining a set of fate lines. Each fate line is a choice sequence with each element indicating which suppliers we choose at a certain time point. At any point in time, we evolve or derive all of the fate lines we own. Specifically, suppose we receive the symbol "y" at some point in time t, and we have the destiny line f= "nnnnxy........ xxy". (where "n" stands for noise). First, we must evolve f as f="nnnnxy........xxyn". Second, following the above rules, we might derive two more fate lines: f1= "nnnxy.........xxyx" and f2=" nnnnxy........ xxyy". When we stop receiving the signal, we examine all the fate lines and filter out the ones that can be solutions (according to paragraph 5, a solution must contain at least a full match of x and a full match of y). If the number of solutions is bigger than 1, then s is the interleaving of x and y. At the same time, if we need to output feasible solutions, we also select the best of all solutions. (which is done in question 3, namely the test cases)
+	
+	
+
+
+
+	
+
+Algorithm Pseudocode (Question 1c)
+	
+
+
+
+
+
+Asymptotic Analysis (Question 1d)
+	To better illustrate, let's first distinguish between the following two algorithms：
+	1. Decide Algorithm:
+	Decide Algorithm is the online algorithm that takes signals s, x, and y and decides if s is an interleaving of x and y.
+	2. Find Algorithm:
+	Find Algorithm is the online algorithm that takes signals s, x, and y and finds all the assignments of symbols in s to symbols x,y, and noise so that s is an interleaving of x and y, namely all solutions.
+	
+	Honestly, my algorithm is a kind of Decide Algorithm. However, to better illustrate, we first look at the asymptotic behavior of the Find Algorithm. Then we have the following:
+	Theorem 1: No what what specific algorithm is applied, the worst-case time complexity of the find algorithm is Omega(2**n), where n is the length of sequence s.
+	Theorem 1 is clear. When there are n symbols in s, the worst case can be the following: s is a sequence of n "1"s; x is a sequence of only a symbol "1"; y is also a sequence of only a symbol "1". In this case, using the choice representation of solutions, every sequence with n "x" or "y" characters is a solution, as long as this sequence contains at least one "x" and at least one "y". For example, assume that s="11111111", x="1", y="1". Then solution1="yxxxxxxx", solution2="xyxyxyxy", and solution3="xxxxyyyy" are all the solutions for this problem. As a result, in the worst case, there are at least 2**n-2 solutions. To generate a solution, we need at least Omega(1) time complexity. So the worst-case time complexity of the find algorithm is (2**n-2)*Omega(1 )=Omega(2**n-2)=Omegae(2**). So the theorem 1 holds.
+
+	Based on point 1, we have the point:
+	Point 2: For my decide algorithm, the worst-case time complexity is still Omega(2**n), where n is the length of sequence s. 
+	To be honest, to decide whether s is an interleaving of x and y, one solution is enough. We don't need to find all the solutions. During the online receiving of symbols, whenever we find a fate line whose history already contains at least one full match of x and one full match of y, we directly regard any later symbols as noise and stop the algorithm to save a lot of time complexity. For example, in the above example where s="11111111", x="1", and y="1", whenever we receive the second symbol in s, we directly have the solution of "xydddddd", which saves a lot of time complexity. However, this way of ending the algorithm early is actually of limited use. When there are n symbols in s, the worst case can be the following: s="00......001" (There are n-1 "0"s in s), x="0",y="00.....001" (There are n-2 "0"s in y"). So before we receive the last two symbols in s, namely "01", any fate line that is a sequence with n-2 "x" or "y" symbols is valid. For example, assume that s="000001", x="0", y="00001". Before we read the last two symbols  "01" in s, fateline1="xxxx", fateline2="yyyy", and fateline3="xxyy" are all valid fate lines and can be later developed into a solution as long as the later symbols in s not received yet meet with a certain condition. To generate each fate line, we need at least Omega(1) time complexity. So even with the technique of ending the algorithm, the worst-case time complexity of my decide algorithm is still 2**(n-2)*Omega(1)=Omega(2**(n-2))=Omega(2**n). 
+	
+
+	
+
+
+
+
+	 
