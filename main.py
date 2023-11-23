@@ -200,7 +200,7 @@ class OnlineSignalProcessor:
         a1 = OnlineSignalProcessor.number_of_fate_line_derivation
         a2 = OnlineSignalProcessor.number_of_fate_line_evolvement
         a3 = 2 ** a0
-        a4 = 3 ** a0
+        a4 = 3*(1-(7/3)**a0)/(1-7/3)
         with open(OnlineSignalProcessor.TestRunOutputFilename, "a+") as file:
             file.write("{} {} {} {} {}\n".format(a0, a1, a2, a3, a4))
 
