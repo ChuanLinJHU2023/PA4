@@ -297,11 +297,6 @@ Fate Line 71 (birth date:  9): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x']
 
 
 Here is all the solutions:
-Fate Line 34 (birth date:  6): ['x', 'x', 'y', 'y', 'x', 'y', 'd', 'd', 'd']
-Fate Line 35 (birth date:  6): ['x', 'y', 'x', 'y', 'x', 'y', 'd', 'd', 'd']
-Fate Line 36 (birth date:  6): ['x', 'y', 'y', 'x', 'x', 'y', 'd', 'd', 'd']
-Fate Line 42 (birth date:  7): ['b', 'y', 'y', 'y', 'x', 'x', 'x', 'd', 'd']
-Fate Line 53 (birth date:  8): ['b', 'b', 'y', 'y', 'x', 'x', 'x', 'y', 'd']
 Fate Line 69 (birth date:  9): ['x', 'x', 'y', 'y', 'x', 'y', 'x', 'x', 'x']
 Fate Line 70 (birth date:  9): ['x', 'y', 'x', 'y', 'x', 'y', 'x', 'x', 'x']
 Fate Line 71 (birth date:  9): ['x', 'y', 'y', 'x', 'x', 'y', 'x', 'x', 'x']
@@ -311,6 +306,5 @@ For FateLine 69, we have
 [1, 2, 5, 7, 8, 9] are repetitions of x
 [3, 4, 6] are repetitions of y
 [] are noise
-True
 
 Process finished with exit code 0

@@ -2,7 +2,7 @@ from main import *
 x="101"
 y="010"
 s="100110011001"
-onlineSignalProcessor=SignalProcess(s,x,y)
+onlineSignalProcessor=SignalProcess(s,x,y, whetherWithMinimalNoise=True)
 onlineSignalProcessor.translateSolutionWithId(216)
 
 # For FateLine216, we have

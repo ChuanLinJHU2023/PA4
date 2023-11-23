@@ -1,4 +1,4 @@
-]/usr/local/bin/python3 /Users/linchuan/JHU算法导论/PA4/TestCase_S4.py
+/usr/local/bin/python3 /Users/linchuan/JHU算法导论/PA4/TestCase_S4.py
 Here is a report at time t=1
 Fate Line  1 (birth date:  0): ['b']
 Fate Line  2 (birth date:  1): ['x']
@@ -878,22 +878,6 @@ Fate Line235 (birth date: 12): ['x', 'y', 'x', 'y', 'x', 'y', 'y', 'y', 'x', 'y'
 
 
 Here is all the solutions:
-Fate Line 33 (birth date:  6): ['x', 'x', 'y', 'x', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd']
-Fate Line 34 (birth date:  6): ['x', 'x', 'y', 'y', 'x', 'y', 'd', 'd', 'd', 'd', 'd', 'd']
-Fate Line 36 (birth date:  6): ['x', 'y', 'x', 'x', 'y', 'y', 'd', 'd', 'd', 'd', 'd', 'd']
-Fate Line 37 (birth date:  6): ['x', 'y', 'x', 'y', 'x', 'y', 'd', 'd', 'd', 'd', 'd', 'd']
-Fate Line 58 (birth date:  8): ['b', 'b', 'y', 'x', 'y', 'x', 'y', 'x', 'd', 'd', 'd', 'd']
-Fate Line 59 (birth date:  8): ['b', 'b', 'y', 'x', 'y', 'y', 'x', 'x', 'd', 'd', 'd', 'd']
-Fate Line 61 (birth date:  8): ['b', 'b', 'y', 'y', 'x', 'x', 'y', 'x', 'd', 'd', 'd', 'd']
-Fate Line 62 (birth date:  8): ['b', 'b', 'y', 'y', 'x', 'y', 'x', 'x', 'd', 'd', 'd', 'd']
-Fate Line101 (birth date: 10): ['b', 'b', 'b', 'b', 'x', 'x', 'y', 'x', 'y', 'y', 'd', 'd']
-Fate Line102 (birth date: 10): ['b', 'b', 'b', 'b', 'x', 'x', 'y', 'y', 'x', 'y', 'd', 'd']
-Fate Line104 (birth date: 10): ['b', 'b', 'b', 'b', 'x', 'y', 'x', 'x', 'y', 'y', 'd', 'd']
-Fate Line105 (birth date: 10): ['b', 'b', 'b', 'b', 'x', 'y', 'x', 'y', 'x', 'y', 'd', 'd']
-Fate Line182 (birth date: 12): ['b', 'b', 'b', 'b', 'b', 'b', 'y', 'x', 'y', 'x', 'y', 'x']
-Fate Line183 (birth date: 12): ['b', 'b', 'b', 'b', 'b', 'b', 'y', 'x', 'y', 'y', 'x', 'x']
-Fate Line185 (birth date: 12): ['b', 'b', 'b', 'b', 'b', 'b', 'y', 'y', 'x', 'x', 'y', 'x']
-Fate Line186 (birth date: 12): ['b', 'b', 'b', 'b', 'b', 'b', 'y', 'y', 'x', 'y', 'x', 'x']
 Fate Line212 (birth date: 12): ['x', 'x', 'y', 'x', 'y', 'y', 'y', 'x', 'y', 'x', 'y', 'x']
 Fate Line213 (birth date: 12): ['x', 'x', 'y', 'x', 'y', 'y', 'y', 'x', 'y', 'y', 'x', 'x']
 Fate Line215 (birth date: 12): ['x', 'x', 'y', 'x', 'y', 'y', 'y', 'y', 'x', 'x', 'y', 'x']
