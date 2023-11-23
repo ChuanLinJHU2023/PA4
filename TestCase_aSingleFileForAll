@@ -5,7 +5,7 @@
 	If we seek to decide with the least time complexity whether s is an interleaving of x and y, the solution to test case s1 is not the solution provided. 
 	The solution provided is as follows: {[1,2,5],[7,8,9]} are repetitions of x and {[3],[4],[6]} are repetitions of y. 
 	However, if we seek the least time complexity, the solution should be as follows: {[1,2,5]} are repetitions of x; {[3],[4]} are repetitions of y; {[6,7,8,9]} are noise.
-	To put it simply, when we read the 5th character, we have already got a full match of x and a full match of y, which produces a solution. To reduce the time complexity, the algorithm will lazily regard any symbol following the 5th symbol as noise and will not produce the solution provided.
+	To put it simply, when we receive the 5th symbol, we have already got a full match of x and two full matches of y, which produces a solution. To reduce the time complexity, the algorithm will lazily regard any symbol following the 5th symbol as noise and will not produce the solution provided.
 
 	Aspect 2
 	if we seek to get the solution with minimal noise, the solution to test case s3 is not the solution provided. 
@@ -13,7 +13,7 @@
 	However, we have a solution with less noise.
 	The solution with less noise is as follows: {[4, 6, 8], [10, 13, 14], [15, 17, 18], [19, 21, 23], [28, 29, 30]} are repetitions of x; {[5, 7, 9], [11, 12, 16], [20, 22, 24], [25, 26, 27]} are repetitions of y; {[1, 2, 3], [31, 32, 33]} are noise.
 
-	From the first and second aspects, we can see that there is hardly anything special about the solution provided. It is difficult to have an algorithm that produces only the provided solution and no alternative solutions.
+	From these two aspects, we can see that there is hardly anything special about the solution provided. It is difficult to have an algorithm that produces only the provided solution and no alternative solutions.
 	The four test cases are as follows:
 
 
