@@ -146,7 +146,7 @@ class OnlineSignalProcessor:
                 n = len(fateLine.history)
                 file.write("There is the output dataset of a test run with n={}\n".format(n))
                 for fateLine in self.FateLines:
-                    if fateLine.id not in self.failed_solutions:
+                    if fateLine.is_solution:
                         file.write("Fate Line{:3} (birth date:{:3}): {}\n".format(fateLine.id, fateLine.birth_date,
                                                                                   fateLine.history))
                 file.write("\n" * 10)

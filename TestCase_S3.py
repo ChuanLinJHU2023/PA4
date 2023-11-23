@@ -5,17 +5,19 @@ s="001100110101011001100110010101111"
 onlineSignalProcessor=SignalProcess(s,x,y)
 onlineSignalProcessor.translateSolutionWithId(5157)
 
+
+
 # onlineSignalProcessor.translateSolutionWithId(5157)
 # For FateLine5157, we have
 # [12, 13, 14, 15, 16, 18, 23, 25, 26] are repetitions of x
 # [9, 10, 11, 17, 19, 20, 21, 22, 24, 27, 28, 29] are repetitions of y
 # [1, 2, 3, 4, 5, 6, 7, 8, 30, 31, 32, 33] are noise
 
-# onlineSignalProcessor.translateSolutionWithId(7996)
-# For FateLine7996, we have
-# [8, 9, 10, 12, 13, 14, 15, 17, 19, 23, 25, 26, 28, 29, 31, 32] are repetitions of x
-# [6, 7, 11, 16, 18, 20, 21, 22, 24, 27, 30] are repetitions of y
-# [1, 2, 3, 4, 5, 33] are noise
+# onlineSignalProcessor.translateSolutionWithId(6695)
+# For FateLine6695, we have
+# [4, 6, 8, 10, 13, 14, 15, 17, 18, 19, 21, 23, 28, 29, 30] are repetitions of x
+# [5, 7, 9, 11, 12, 16, 20, 22, 24, 25, 26, 27] are repetitions of y
+# [1, 2, 3, 31, 32, 33] are noise
 
 # positions_of_x_in_solution=[12,  13,  14,  15,  16,  18,  23,  25,  26]
 # positions_of_y_in_solution=[9,  10,  11,  17,  19,  20,  21,  22,  24,  27,  28,  29]

@@ -3,6 +3,17 @@ OnlineSignalProcessor.isTestRun=True
 OnlineSignalProcessor.TestRunOutputFilename="TestRun_Output"
 OnlineSignalProcessor.TestRunDatasetOutputFilename="TestRun_DatasetOutput"
 OnlineSignalProcessor.TestRunDatasetInputFilename="TestRun_DatasetInput"
+s="""
+a0=n
+a1=number_of_fate_line_derivation
+a2=number_of_fate_line_evolvement
+a3=2**n
+a4=3**n
+a0 a1 a2 a3 a4
+"""
+with open(OnlineSignalProcessor.TestRunOutputFilename, "a+") as file:
+    file.write(s)
+
 for n in range(4,15):
     s="0"*(n-1)+"1"
     x="0"
