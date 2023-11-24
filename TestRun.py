@@ -3,13 +3,12 @@ OnlineSignalProcessor.isTestRun=True
 OnlineSignalProcessor.TestRunOutputFilename="TestRun_Output"
 OnlineSignalProcessor.TestRunDatasetOutputFilename="TestRun_DatasetOutput"
 OnlineSignalProcessor.TestRunDatasetInputFilename="TestRun_DatasetInput"
-s="""
-a0=n
+s="""a0=n
 a1=number_of_fate_line_derivation
 a2=number_of_fate_line_evolvement
 a3=2**n
 a4=3*(1-(7/3)**n)/(1-7/3)
-a0 a1 a2 a3 a4
+[a0,a1,a2,a3,a4]
 """
 with open(OnlineSignalProcessor.TestRunOutputFilename, "a+") as file:
     file.write(s)

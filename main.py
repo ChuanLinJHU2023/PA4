@@ -202,7 +202,8 @@ class OnlineSignalProcessor:
         a3 = 2 ** a0
         a4 = 3*(1-(7/3)**a0)/(1-7/3)
         with open(OnlineSignalProcessor.TestRunOutputFilename, "a+") as file:
-            file.write("{} {} {} {} {}\n".format(a0, a1, a2, a3, a4))
+            lst=[a0,a1,a2,a3,a4]
+            file.write("{}\n".format(lst))
 
 
 def SignalProcess(signal, x, y, whetherWithMinimalNoise=False):
