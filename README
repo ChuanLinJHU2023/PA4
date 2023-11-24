@@ -1,6 +1,8 @@
 MainPDF.pdf provides all the relevant information about the assignment. It is the first file to view.
 main.py implements the fate lines and the online signal processor.
 
+TestCase_aSingleFileForAll is the required single text file in question 3 to record all test cases
+
 TestCase_S1.py is the test case S1, which is also the 1st trace run to show the correctness of our online signal processor using fate line
 TestCase_S2.py is the test case S2, which is also the 2nd trace run to show the correctness of our online signal processor using fate line
 TestCase_S3.py is the test case S3, which is also the 3rd trace run to show the correctness of our online signal processor using fate line
