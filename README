@@ -1,0 +1,26 @@
+MainPDF.pdf provides all the relevant information about the assignment. It is the first file to view.
+main.py implements the fate lines and the online signal processor.
+
+TestCase_S1.py is the test case S1, which is also the 1st trace run to show the correctness of our online signal processor using fate line
+TestCase_S2.py is the test case S2, which is also the 2nd trace run to show the correctness of our online signal processor using fate line
+TestCase_S3.py is the test case S3, which is also the 3rd trace run to show the correctness of our online signal processor using fate line
+TestCase_S4.py is the test case S4, which is also the 4th trace run to show the correctness of our online signal processor using fate line
+TestCase_S1_Output is the output of TestCase_S1.py , showing the correctness of our online signal processor
+TestCase_S2_Output is the output of TestCase_S2.py , showing the correctness of our online signal processor
+TestCase_S3_Output is the output of TestCase_S3.py , showing the correctness of our online signal processor
+TestCase_S4_Output is the output of TestCase_S4.py , showing the correctness of our online signal processor
+
+TestRun.py is the test run to measure the asymptotic behavior of our online signal processor
+TestRun_Output is the output of TestRun.py, measuring the asymptotic behavior of our online signal processor
+TestRun_DatasetInput records the input dataset for the test runs to measure the asymptotic behavior of quicksort
+TestRun_DatasetOutput records the output dataset for the test runs to measure the asymptotic behavior of quicksort
+
+
+ComparisonForTestRun.py draws the graph to compare algorithm’s worst-case asymptotic behavior to the achieved asymptotic behavior of the program
+ComparisonForTestRun_Output is a graph of ComparisonForTestRun.py, comparing algorithm’s worst-case asymptotic behavior to the achieved asymptotic behavior of the program
+
+The compiler is python 3.11
+The IDE is Pycharm
+For every py file, the instruction to run it is "python xxx.py", where xxx.py is the name of the file that you want to run.
+
+
